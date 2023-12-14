@@ -1,4 +1,4 @@
-# Day 2 of 100 days of Python programming bootcamp
+# Day 3 of 100 days of Python programming bootcamp
 
 This repository contains a Python Code for a mini game Treasure Island.
 
