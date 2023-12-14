@@ -1,4 +1,4 @@
-# Day 3 of 100 days of Python programming bootcamp
+# Day 5 of 100 days of Python programming bootcamp
 
 This repository contains a python code for creating a password of your desired lenght.
 
