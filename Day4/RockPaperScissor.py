@@ -47,7 +47,9 @@ if comp_choice == 1:
 if comp_choice == 2:
     print(f"Computer chose: {options[comp_choice]}\n" + scissors)
 
-if user_choice == comp_choice:
+if user_choice >= 3:
+    print("You lost.")
+elif user_choice == comp_choice:
     print("Its a draw.")
 elif user_choice == 2 and comp_choice == 0:
     print("You lost.")
