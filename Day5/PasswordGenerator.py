@@ -12,17 +12,14 @@ total_length = nr_letters + nr_numbers + nr_symbols
 
 password = ""
 
-for i in range(0, nr_letters):
-    ran = random.randint(0, len(letters)-1)
-    password += letters[ran]
+for i in range(1, nr_letters + 1):
+    password += random.choice(letters)
 
-for i in range(0, nr_numbers):
-    ran = random.randint(0, len(numbers)-1)
-    password += numbers[ran]
+for i in range(1, nr_numbers + 1):
+    password += random.choice(numbers)
 
-for i in range(0, nr_symbols):
-    ran = random.randint(0, len(symbols)-1)
-    password += symbols[ran]
+for i in range(1, nr_symbols + 1):
+    password += random.choice(symbols)
 
 password = ''.join(random.sample(password, len(password)))
 
