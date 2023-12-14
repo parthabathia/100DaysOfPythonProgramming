@@ -1,6 +1,6 @@
 # Day 5 of 100 days of Python programming bootcamp
 
-This repository contains a python code for creating a password of your desired lenght.
+This repository contains a python code for creating a password of your desired length.
 
 The user is asked for 3 inputs.
 1. Enter the number of letters requried. (Letters range from 'a-z' and 'A-Z')
