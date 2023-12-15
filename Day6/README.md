@@ -1,9 +1,22 @@
 # Day 6 of Python programming bootcamp
 
-This is a logical problem that has to be solved on an external website. The link of the website is given below.
+This is a logical problem that has to be solved on an external website. The link to the website is given below.
 
 https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json
 
-This problem needs to be solved logically. The problem statement is given on the website with the built-in functions that can be used.
+Description of the Maze :
 
-The solution is provided in the text file included in this repository. View it, explore it and if you find a better solution feel free to branch it and update it.
+Lost in a maze
+
+Reeborg was exploring a dark maze and the battery in its flashlight ran out.
+
+Write a program using an if/elif/else statement so Reeborg can find the exit. The secret is to have Reeborg follow along the right edge of the maze, turning right if it can, going straight ahead if it can’t turn right, or turning left as a last resort.
+
+What you need to know:
+
+    The functions move() and turn_left().
+    Either the test front_is_clear() or wall_in_front(), right_is_clear() or wall_on_right(), and at_goal().
+    How to use a while loop and if/elif/else statements.
+    It might be useful to know how to use the negation of a test.
+
+Difficulty level: 4/10
