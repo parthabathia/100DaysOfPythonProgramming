@@ -1,17 +1,20 @@
 # Day 4 of 100 days of Python programming bootcamp
 
-This repository contains a Python Code for a mini game Rock, Paper and Scissors. The game is played between a user and the computer.
+This code is a basic implementation of the classic Rock Paper Scissors game in Python.
 
-The game requires users to choose from either Rock, Paper or Scissors and a random selection is made for the computer.
+Features:
 
-## Rules of the game.
+    Players choose their move (Rock, Paper, or Scissors) through a numbered prompt.
+    The computer randomly chooses its move.
+    The game determines the winner based on the standard Rock Paper Scissors rules.
+    Outputs show the player's choice, the computer's choice, and the game result (win, lose, or draw).
 
-1. Rock triumphs over Scissors. (Rock > Scissor)
-2. Paper triumphs over Rock. (Paper > Rock)
-3. Scissors triumphs over Paper. (Scissor > Paper)
+Technical details:
 
-Based on the user and computer selections, and considering the rules mentioned above, the output received would either be 'Its a draw', 'You won' or 'You lost'.
+    Uses random.randint to generate the computer's choice.
+    Employs conditional statements (if-else) to handle different scenarios based on player and computer choices.
+    Utilizes multiple strings (rock, paper, scissors) to display visuals for each option.
 
-Feel free to explore the code and have an experience yourself. 
+Overall, this code provides a fun and interactive way to play Rock Paper Scissors with a virtual opponent.
 
-Bonus: ASCII drawings are added to make it more entertaining.
+Feel free to explore and play around with the code. Branch the code to improve on the overall mechanics or user experience.
