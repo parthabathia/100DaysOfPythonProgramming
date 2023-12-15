@@ -1,9 +1,14 @@
 # Day 2 of 100 days of Python programming bootcamp
 
-This repository contains a Python code for a Tip Calculator.
+This Python code is a simple tip calculator program. It:
 
-In this project, we take multiple inputs from the user. The first input is the total amount of the bill in dollars. The second input would be the percentage of tip, viz. 10, 12 or 15. The third input will be the number of people.
+    Welcomes the user and prompts them for information.
+    Gets the bill amount and converts it to a float for calculations.
+    Asks the user for their desired tip percentage from three options.
+    Finds the number of people to split the bill among.
+    Calculates the total cost per person by adding the tip (calculated from the bill amount and tip percentage) and dividing by the number of people.
+    Displays the cost per person with a formatted string, including two decimal places.
 
-The program will then calculate the tip amount based on the bill amount and tip percentage. The tip amount will be added to the bill amount and final amount will be divided based on the number of people.
+Overall, this code provides a user-friendly way to calculate and split a restaurant bill with a tip, including dividing the cost among multiple people.
 
-The program will then output the amount payable by each person.
+Feel free to explore and play around with the code. Branch the code to improve the overall mechanics or user experience.
