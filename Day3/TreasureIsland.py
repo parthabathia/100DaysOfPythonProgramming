@@ -21,16 +21,16 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("\nWelcome to Treasure Island.")
-start = input("Do you wish to start? (Y/N) ")
+start = input("Do you wish to find the treasure? (Y/N) ").upper()
 play = 1
 if start == 'Y':
     while play:
         print("Let's Start")
-        direction = input("Do you wish to go Left or Right? (L/R) ")
+        direction = input("Do you wish to go Left or Right? (L/R) ").upper()
         if direction == 'R':
             print("You fell into a valley. You Died!")
             print("Game Over.")
-            play_again = input("Do you wish to try again? (Y/N) ")
+            play_again = input("Do you wish to try again? (Y/N) ").upper()
             if play_again == 'Y':
                 continue
             else:
@@ -39,11 +39,11 @@ if start == 'Y':
         else:
             print("You chose the correct path.")
             print("You arrived at a lake.")
-            pass_the_lake = input("Do you wish to wait or swim? (W/S) ")
+            pass_the_lake = input("Do you wish to wait or swim? (W/S) ").upper()
             if pass_the_lake == 'S':
                 print("You were eaten by pirhanas. You Died!")
                 print("Game Over.")
-                play_again = input("Do you wish to try again? (Y/N) ")
+                play_again = input("Do you wish to try again? (Y/N) ").upper()
                 if play_again == 'Y':
                     continue
                 else:
@@ -53,11 +53,11 @@ if start == 'Y':
                 print("You waited for the boat.")
                 print("You crossed the lake.")
                 print("There are three doors in front of you. Red, Yellow and Blue.")
-                gate = input("Which door will you select? (R/Y/B) ")
+                gate = input("Which door will you select? (R/Y/B) ").upper()
                 if gate == 'R':
                     print("You entered a room full of fire. You died.")
                     print("Game Over.")
-                    play_again = input("Do you wish to try again? (Y/N) ")
+                    play_again = input("Do you wish to try again? (Y/N) ").upper()
                     if play_again == 'Y':
                         continue
                     else:
@@ -66,7 +66,7 @@ if start == 'Y':
                 elif gate == 'B':
                     print("You entered a room full of poison. You died.")
                     print("Game Over.")
-                    play_again = input("Do you wish to try again? (Y/N) ")
+                    play_again = input("Do you wish to try again? (Y/N) ").upper()
                     if play_again == 'Y':
                         continue
                     else:
@@ -75,7 +75,7 @@ if start == 'Y':
                 else:
                     print("Congratulation! You have won.")
                     print("Game over.")
-                    play_again = input("Do you wish to play again? (Y/N) ")
+                    play_again = input("Do you wish to play again? (Y/N) ").upper()
                     if play_again == 'Y':
                         continue
                     else:

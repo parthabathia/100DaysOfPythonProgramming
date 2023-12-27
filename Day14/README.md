@@ -1,3 +1,5 @@
+# Day 14 of Python programming bootcamp
+
 This Python code implements a simple "Higher or Lower" game where the player compares the number of followers between two randomly selected social media accounts. Here's a description of the code:
 
 1. The code imports the ASCII art for the game's logo and the "vs" symbol, as well as the game data (information about various social media accounts) and necessary libraries.

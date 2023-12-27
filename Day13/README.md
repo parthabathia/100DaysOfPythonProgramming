@@ -1,3 +1,5 @@
+# Day 13 of Python programming bootcamp
+
 The provided code is a collection of Python snippets with intentional bugs, and it is meant to serve as a debugging exercise. Each section of the code has a specific problem that needs to be identified and corrected. Here's a description for each part:
 
 1. **Describe Problem:**
