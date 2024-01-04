@@ -1,3 +1,5 @@
+# Day 18 of Python programming bootcamp
+
 This Python code utilizes the Turtle graphics library to create an artistic pattern of dots on a canvas. The colors for the dots are extracted from an image using the colorgram library. Here's a breakdown of the code:
 
 1. **Import Libraries:**
