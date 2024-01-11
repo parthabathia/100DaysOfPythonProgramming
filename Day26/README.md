@@ -1,54 +1,63 @@
 # Day 26 of Python programming bootcamp
 
-The provided Python code utilizes the pandas library to read a CSV file containing the NATO phonetic alphabet mapping. It then prompts the user to input a word, converts the input word to uppercase, and maps each letter of the word to its corresponding NATO phonetic alphabet representation. Finally, it prints the resulting NATO phonetic alphabet representation of the user-entered word.
+**Code Description: Phonetic Generator using NATO Phonetic Alphabet**
+
+The provided Python code utilizes the pandas library to create a phonetic representation of a user-input word using the NATO Phonetic Alphabet. The NATO Phonetic Alphabet is a standard set of phonetic representations assigned to each letter of the English alphabet to ensure clear communication in radio and telephone transmissions.
 
 Here's a breakdown of the code:
 
-1. **Importing the pandas library:**
+1. **Importing Libraries:**
    ```python
    import pandas as pd
    ```
 
-   This line imports the pandas library and assigns it the alias `pd`.
+   The code starts by importing the pandas library, which is commonly used for data manipulation and analysis.
 
-2. **Reading the CSV file:**
+2. **Function Definition - `generate_phonetic()`:**
+   ```python
+   def generate_phonetic():
+   ```
+
+   The code defines a function named `generate_phonetic`. This function will take user input, convert it to uppercase, and then generate the corresponding NATO Phonetic Alphabet representation for each letter in the input word.
+
+3. **User Input:**
+   ```python
+   user_word = input("Enter a word: ").upper()
+   ```
+
+   The user is prompted to enter a word, and the input is converted to uppercase using the `upper()` method to ensure consistency.
+
+4. **Try-Except Block:**
+   ```python
+   try:
+       nato_phonetic_for_user_word = [alphabet_dict[letter] for letter in user_word]
+   except KeyError:
+       print("Kindly use only letters.")
+   else:
+       print(nato_phonetic_for_user_word)
+   ```
+
+   The code attempts to create a list of NATO phonetic representations for each letter in the user's input. If the user enters a character that is not a letter (e.g., a number or symbol), a `KeyError` is caught, and a corresponding message is printed. If the input consists only of letters, the NATO phonetic representations are printed.
+
+5. **Reading NATO Phonetic Alphabet Data:**
    ```python
    data = pd.read_csv("nato_phonetic_alphabet.csv")
    ```
 
-   The code reads a CSV file named "nato_phonetic_alphabet.csv" using pandas and stores the data in a DataFrame called `data`.
+   The code reads a CSV file named "nato_phonetic_alphabet.csv" using pandas. This file likely contains a mapping between letters and their corresponding NATO phonetic representations.
 
-3. **Creating a dictionary for the NATO phonetic alphabet:**
+6. **Creating Alphabet Dictionary:**
    ```python
    alphabet_dict = {row.letter: row.code for index, row in data.iterrows()}
    ```
 
-   The code iterates over the rows of the DataFrame and creates a dictionary (`alphabet_dict`) where the keys are the letters of the alphabet, and the values are their corresponding NATO phonetic representations.
+   The code creates a dictionary (`alphabet_dict`) from the data read from the CSV file, where each letter is mapped to its corresponding NATO phonetic code.
 
-4. **Taking user input:**
+7. **Function Call:**
    ```python
-   user_word = input("Enter a word: ")
+   generate_phonetic()
    ```
 
-   The code prompts the user to enter a word, and the input is stored in the variable `user_word`.
+   The code calls the `generate_phonetic()` function, initiating the user interaction and phonetic representation generation process.
 
-5. **Converting the user input to uppercase:**
-   ```python
-   user_word_as_list = [letter.upper() for letter in user_word]
-   ```
-
-   The code converts each letter of the user-entered word to uppercase and stores the result as a list in `user_word_as_list`.
-
-6. **Mapping letters to NATO phonetic alphabet representations:**
-   ```python
-   nato_word_for_user_word = [alphabet_dict[letter] for letter in user_word_as_list]
-   ```
-
-   The code maps each letter of the user-entered word to its corresponding NATO phonetic representation using the previously created `alphabet_dict`. The resulting NATO phonetic alphabet representations are stored in the list `nato_word_for_user_word`.
-
-7. **Printing the result:**
-   ```python
-   print(nato_word_for_user_word)
-   ```
-
-   Finally, the code prints the NATO phonetic alphabet representation of the user-entered word.
+Overall, this code provides a simple interface for users to input a word, and it outputs the NATO Phonetic Alphabet representations for the letters in the input word, ensuring that only valid letters are processed. The mapping between letters and phonetic codes is obtained from an external CSV file.
