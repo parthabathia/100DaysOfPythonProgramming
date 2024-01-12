@@ -45,8 +45,8 @@ def save():
             with open("password_manager.txt", mode="a") as file:
                 text = f"{website} | {username} | {password}\n"
                 file.writelines(text)
-            password_entry.delete(0, END)
-            website_entry.delete(0, END)
+                password_entry.delete(0, END)
+                website_entry.delete(0, END)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
