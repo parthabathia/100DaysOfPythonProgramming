@@ -2,16 +2,7 @@
 
 ## Directory Structure:
 
-### 1. Kanye's Quotes Display
-- **File**: `main.py`
-- **Description**: This Python program utilizes the Kanye.rest API to fetch and display random quotes from Kanye West. The graphical user interface (GUI) is created using the Tkinter library, providing an interactive and visually appealing way to showcase Kanye's quotes.
-
-#### How to Run:
-```bash
-python main.py
-```
-
-### 2. Email Notification with ISS Location and Sunrise-Sunset API
+### 1. Email Notification with ISS Location and Sunrise-Sunset API
 - **File**: `iss_tracker.py`
 - **Description**: This Python program is designed to send email notifications using the SMTP protocol. It incorporates the International Space Station (ISS) location API and the Sunrise-Sunset API to determine whether the ISS is in proximity to the specified latitude and longitude during nighttime. If the ISS is within a certain degree range of the provided location, and it is nighttime, an email notification will be triggered.
 
@@ -22,6 +13,15 @@ python main.py
 #### How to Run:
 ```bash
 python iss_email_notification.py
+```
+
+### 2. Kanye's Quotes Display
+- **File**: `main.py`
+- **Description**: This Python program utilizes the Kanye.rest API to fetch and display random quotes from Kanye West. The graphical user interface (GUI) is created using the Tkinter library, providing an interactive and visually appealing way to showcase Kanye's quotes.
+
+#### How to Run:
+```bash
+python main.py
 ```
 
 ## Learning Highlights:
