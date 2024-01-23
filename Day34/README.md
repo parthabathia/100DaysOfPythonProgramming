@@ -2,4 +2,8 @@
 
 ## Welcome to the day 34 of python programming bootcamp
 
-## This is a plcaeholder file for now
+## This is a placeholder file for now
+
+### Code will be added soon
+
+Main.py does not contain any code.
