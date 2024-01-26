@@ -1,7 +1,15 @@
-# test code
+from question_model import Question
+from data import question_data
+from quiz_brain import QuizBrain
+from ui import QuizInterface
 
-data_will_be_added_later = True
+question_bank = []
+for question in question_data:
+    question_text = question["question"]
+    question_answer = question["correct_answer"]
+    new_question = Question(question_text, question_answer)
+    question_bank.append(new_question)
 
-was_data_added_today = False
 
-will_data_be_added_tomorrow = True
+quiz = QuizBrain(question_bank)
+quiz_ui = QuizInterface(quiz)
