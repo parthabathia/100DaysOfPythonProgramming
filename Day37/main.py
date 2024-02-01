@@ -1,13 +1,13 @@
 import requests
 from datetime import datetime
 
-username = "parthbathia"
-token = "S0n1que243wdfdsf54efcds4d"
+username = "user_id"
+token = "your_token"
 
 url = "https://pixe.la/v1/users"
 user_params = {
     "token": token,
-    "username": "parthbathia",
+    "username": username,
     "agreeTermsOfService": "yes",
     "notMinor": "yes"
 }
@@ -21,7 +21,6 @@ graph_config = {
     "unit": "commit",
     "type": "int",
     "color": "kuro",
-    "timezone": "Asia/Kolkata"
 }
 headers = {
     "X-USER-TOKEN": token
