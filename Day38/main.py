@@ -6,10 +6,10 @@ NUTRI_APP_ID = "your_id"
 
 SHEETY_TOKEN = "<your_token>"
 
-GENDER = "Male"
-WEIGHT = 110
-HEIGHT = 173
-AGE = 32
+GENDER = "your gender"
+WEIGHT = "your weight in int"
+HEIGHT = "your height in int"
+AGE = "your age in int"
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 query = input("Which exercises did you do today? ")
